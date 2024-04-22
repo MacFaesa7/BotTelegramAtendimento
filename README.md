@@ -23,12 +23,7 @@
 - git add README.md
 - git commit -m "first commit"
 - git branch -M main
-- git remote add origin https://github.com/MacFaesa7/BotTelegramAtendimento.git
-- git push -u origin main
 
-- git remote add origin https://github.com/MacFaesa7/BotTelegramAtendimento.git
-- git branch -M main
-- git push -u origin main
 
 //# Environment variables declared in this file are automatically made available to Prisma.
 //# See the documentation for more detail: https://pris.ly/d/prisma-schema#accessing-environment-variables-from-the-schema
