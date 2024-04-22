@@ -1,0 +1,25 @@
+// This is your Prisma schema file,
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
+
+// schema.prisma
+
+// Defina o gerador para o Prisma Client
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "sqlite"
+  url      = env("DATABASE_URL")
+}
+
+model Email {
+  id      Int      @id @default(autoincrement())
+  email   String
+}
+
+//O Prisma ORM lê o URL de conexão do arquivo dotenv nas seguintes situações:
+
+//Quando atualiza o esquema durante o tempo de construção
+//Quando ele se conecta ao banco de dados durante o tempo de execução
+// DATABASE_URL=postgresql://janedoe:mypassword@localhost:5432/mydb
